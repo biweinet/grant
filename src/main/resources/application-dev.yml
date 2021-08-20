@@ -1,0 +1,38 @@
+server:
+  port: 8099
+spring:
+  datasource:
+    url: jdbc:mysql://ip:3306/swarm?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&serverTimezone=GMT%2B8&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    driverClassName: com.mysql.cj.jdbc.Driver
+    initialSize: 5
+    maxActive: 20
+    maxPoolPreparedStatementPerConnectionSize: 20
+    maxWait: 60000
+    minEvictableIdleTimeMillis: 300000
+    minIdle: 5
+    poolPreparedStatements: true
+    testOnBorrow: false
+    testOnReturn: false
+    testWhileIdle: true
+    timeBetweenEvictionRunsMillis: 60000
+    type: com.alibaba.druid.pool.DruidDataSource
+
+
+
+swarm:
+  prefix:
+    url: http://ip:1633
+
+
+Swarm-Postage-Batch-Id: batch_id
+
+
+web3j:
+  xdai:
+    url: https://rpc.xdaichain.com
+
+grants:
+  # 文件路径 示例（ Windows配置D:/uploadPath，Linux配置 /home/uploadPath）
+  profile:
